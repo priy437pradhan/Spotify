@@ -1,0 +1,424 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div class="nav-sidebar">
+
+
+            <ul class="side-bar">
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" style="letter-spacing:30px"
+                        fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+
+                </li>
+
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" height="24" width="24"
+                        class="Svg-ytk21e-0 jAKAlG home-active-icon" viewBox="0 0 24 24">
+
+                        <path
+                            d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z" />
+                    </svg>
+                    <a href="#" target="blank">Home</a>
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#b3b3b3" role="img" height="24" width="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
+                        </path>
+                    </svg>
+                    <a href="#" target="blank">Search</a>
+
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#b3b3b3" role="img" height="24" width="24"
+                        class="Svg-ytk21e-0 jAKAlG collection-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z">
+                        </path>
+                    </svg>
+                    <a href="#" target="blank">Library</a>
+
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="#000"
+                        class=" bi bi-plus-square" viewBox="0 0 16 16" style="background: #fff">
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                        </path>
+                    </svg>
+                    <a href="#" target="blank">Create Playlist</a>
+
+                </li>
+                <li class="list">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#9b9b9b" class="heart" viewBox="0 0 512 512"
+                        height="25"
+                        style="background: linear-gradient(125deg,#451FB4,#5c5c5c); padding:6px 6px;border-radius:3px">
+                        <path
+                            d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
+                    </svg>
+                    <a href="#" target="blank">Liked Songs</a>
+
+                </li>
+            </ul>
+
+
+
+        </div>
+
+        <hr class="hr">
+
+    </nav>
+
+
+
+
+
+    <div class="side-container">
+        <div class="top-navbar">
+
+
+
+            <div class="i-con">
+
+                <i class="fa-solid fa-angle-left fa-2x"></i>
+                <i class="fa-solid fa-angle-right fa-2x"></i>
+            </div>
+            <div class="ri8-icon">
+                <button class="upgrade">Upgrade</button>
+                <button class="Priya"><i class="fa-solid fa-user"></i>Priya<i
+                        class="fa-solid fa-caret-down"></i></button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card_container">
+            <div class="card">
+
+
+                <img src="card.jfif" alt="" class="IMG">
+
+                <div class="top-card">
+                    <div class="top">
+                        <h5 class="pl">PLAYLIST</h5>
+                        <h4 class="sponsored">SPONSORED</h4>
+                    </div>
+
+                    <h1>Top Trending India</h1>
+                    <p class="tagline">All your favorite viral track in one place. </p>
+
+                    <button class="play">Play</button><button class="follow">Follow</button> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="30" height="40" style="letter-spacing:30px"
+                        fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">My favorite</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="my_favorite/khuda.jfif" alt="">
+                <h3>Khuda Jaane</h3>
+                <p>Vishal Shekhar,kk...</p>
+            </div>
+            <div class="fav_card">
+                <img src="my_favorite/apnaa.jfif" alt="">
+                <h3>Apnaa Mujhe T...</h3>
+                <p>Sonu Nigam</p>
+            </div>
+            <div class="fav_card">
+                <img src="my_favorite/kuch_to_hai.jfif" alt="">
+                <h3>Kuch to Hai</h3>
+                <p>Arman Mlick</p>
+            </div>
+            <div class="fav_card">
+                <img src="my_favorite/tu_jaan_ na.jfif" alt="">
+                <h3>Tu Jaane Na</h3>
+                <p>Atif Aslam,Pritam</p>
+            </div>
+            <div class="fav_card">
+                <img src="my_favorite/dil_ibadat.jfif" alt="">
+                <h3>Dil Ibaadat</h3>
+                <p>Pritam,kk</p>
+            </div>
+        </div>
+        <div class="headings">
+            <h3 class="fav">Shows to try</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="shows_to_try/decode.jfif" alt="">
+                <h3>Decode Dil..</h3>
+                <p>Spotify Studio</p>
+            </div>
+            <div class="fav_card">
+                <img src="shows_to_try/crime.jfif" alt="">
+                <h3>Crime Spot..</h3>
+                <p>Rishi</p>
+            </div>
+            <div class="fav_card">
+                <img src="shows_to_try/pajama.jfif" alt="">
+                <h3>Pajama Part.. </h3>
+                <p>Spotify Studio</p>
+            </div>
+            <div class="fav_card">
+                <img src="shows_to_try/desi.jfif" alt="">
+                <h3>The Desi Cr...</h3>
+                <p>Spotify studio</p>
+            </div>
+            <div class="fav_card">
+                <img src="shows_to_try/myth.jfif" alt="">
+                <h3>The Mythpat...</h3>
+                <p>Spotify Studio</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">Trending Now</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="Trending_now/baarishien.jfif" alt="">
+                <h3>Baarishein</h3>
+                <p>Anu Jain</p>
+            </div>
+            <div class="fav_card">
+                <img src="Trending_now/oops.jpg" alt="">
+                <h3>OOPS</h3>
+                <p>King</p>
+            </div>
+            <div class="fav_card">
+                <img src="Trending_now/man_moon.jpg" alt="">
+                <h3>Man of The...</h3>
+                <p>Guru Randhawa</p>
+            </div>
+            <div class="fav_card">
+                <img src="Trending_now/thallumala.jfif" alt="">
+                <h3>Thallumaala</h3>
+                <p>Vishnu Vijay</p>
+            </div>
+            <div class="fav_card">
+                <img src="Trending_now/melody.jpg" alt="">
+                <h3>Melody Roja</h3>
+                <p>Yo Yo Honey Singh</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">International emerging artists</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="international/leonor.jfif" alt="" class="int">
+                <h3>Leonor</h3>
+                <p>Artist</p>
+            </div>
+            <div class="fav_card">
+                <img src="international/josheph.jfif" alt="" class="int">
+                <h3>Joseph Kamel</h3>
+                <p>Artist</p>
+            </div>
+            <div class="fav_card">
+                <img src="international/doechii.jfif" alt="" class="int">
+                <h3>Doechii</h3>
+                <p>Artist</p>
+            </div>
+            <div class="fav_card">
+                <img src="international/veigh.jfif" alt="" class="int">
+                <h3>Veigh</h3>
+                <p>Arist</p>
+            </div>
+            <div class="fav_card">
+                <img src="international/NMIXX.jfif" alt="" class="int">
+                <h3>NMIXX</h3>
+                <p>Arist</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">Try something else</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="Try_something/hot.jfif" alt="">
+                <h3>Hot Hits H...</h3>
+                <p>Hottest Hindi Music</p>
+            </div>
+            <div class="fav_card">
+                <img src="Try_something/valentine.jfif" alt="">
+                <h3>Trending Val...</h3>
+                <p>India's Ultimat..</p>
+            </div>
+            <div class="fav_card">
+                <img src="Try_something/top-50.jfif" alt="">
+                <h3>Top 50-Global</h3>
+                <p>Your daily update</p>
+            </div>
+            <div class="fav_card">
+                <img src="Try_something/today.jfif" alt="">
+                <h3>Today's Top..</h3>
+                <p>Steve Lacy i..</p>
+            </div>
+            <div class="fav_card">
+                <img src="Try_something/bts.jfif" alt="">
+                <h3>This is BTS</h3>
+                <p>This is the...</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">Fresh new music</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="Fresh_new/y3.jfif" alt="">
+                <h3>Y3</h3>
+                <p>Yuna</p>
+            </div>
+            <div class="fav_card">
+                <img src="Fresh_new/holiday.jfif" alt="">
+                <h3>HOLIDAY</h3>
+                <p>WINNER</p>
+            </div>
+            <div class="fav_card">
+                <img src="Fresh_new/eleanor.jfif" alt="">
+                <h3>Eleanor</h3>
+                <p>Hot chip</p>
+            </div>
+            <div class="fav_card">
+                <img src="Fresh_new/DS4.jfif" alt="">
+                <h3>DS4EVER</h3>
+                <p>Gunna</p>
+            </div>
+            <div class="fav_card">
+                <img src="Fresh_new/dengoreous.jfif" alt="">
+                <h3>A Dangerous</h3>
+                <p>AURORA, Pomme</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">Featured Chart</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="Feature_chat/global.png" alt="">
+                <h3>Top songs-Glo...</h3>
+                <p>Your weekly up..</p>
+            </div>
+            <div class="fav_card">
+                <img src="Feature_chat/viral.jfif" alt="">
+                <h3>Viral 50-Glob...</h3>
+                <p>Your daily up...</p>
+            </div>
+            <div class="fav_card">
+                <img src="Feature_chat/ind.png" alt="">
+                <h3>Top songs-India</h3>
+                <p>Your weekly up..</p>
+            </div>
+            <div class="fav_card">
+                <img src="Feature_chat/ind-50.jfif" alt="">
+                <h3>Top 50-India</h3>
+                <p>Your daily up..</p>
+            </div>
+            <div class="fav_card">
+                <img src="Feature_chat/viral50-ind.jfif" alt="">
+                <h3>Viral 50-India</h3>
+                <p>Your weekly up...</p>
+            </div>
+        </div>
+
+        <div class="headings">
+            <h3 class="fav">Spotify original and exclusive shows</h3>
+            <h3 class="seeAll">SEE ALL</h3>
+        </div>
+        <div class="card_container2">
+            <div class="fav_card">
+                <img src="spotify_original/ranveer.jfif" alt="">
+                <h3>The Ranveer S..</h3>
+
+                <p>BeerBiceps</p>
+            </div>
+            <div class="fav_card">
+                <img src="spotify_original/bhasker.jfif" alt="">
+                <h3>Bhaskar Bose..</h3>
+                <p>Spotify Studio</p>
+            </div>
+            <div class="fav_card">
+                <img src="spotify_original/rogan.jfif" alt="">
+                <h3>The Joe Roga...</h3>
+                <p>Joe Rogan</p>
+            </div>
+            <div class="fav_card">
+                <img src="spotify_original/sister.jfif" alt="">
+                <h3>What's Up si.</h3>
+                <p>What's Up Sister</p>
+            </div>
+            <div class="fav_card">
+                <img src="spotify_original/maha bharat.jfif" alt="">
+                <h3>Maha Bharat...</h3>
+                <p>Spotify Studio</p>
+            </div>
+        </div>
+
+
+        <div class="bn-container">
+
+            <div class="botton-container">
+                <div class="container3">
+                    <i class="fa-solid fa-shuffle fa-2x"></i>
+                    <i class="fa-solid fa-backward-fast fa-2x"></i>
+                    <i class="fa-solid fa-circle-pause fa-2x"></i>
+                    <i class="fa-solid fa-forward-fast  fa-2x"></i>
+                    <i class="fa-solid fa-arrows-rotate  fa-2x"></i>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
