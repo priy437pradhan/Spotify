@@ -384,3 +384,35 @@ p {
     justify-content: center;
     align-items: center;
 } 
+.responsive {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.responsive .img {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+
+@media(max-width:900px) {
+    .responsive {
+        display: flex;
+    }
+
+    nav,
+    .nav-sidebar,
+    .side-container{
+        display: none;
+    }
+
+
+
+
+}
