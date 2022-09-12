@@ -431,20 +431,34 @@ p {
     .side-container{
         display: none;
     } */
+    .side-container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background: linear-gradient(#4e2097, #121212 50%);
+        /* padding-bottom: 4%; */
+
+
+    }
+
     .card_container2 .fav_card {
         display: none;
     }
-        .card {
-            width: 100%;
-            height: 240px;
-            border-radius: 2px;
-            margin-left: 2%;
-            margin-right: 2%;
-             display: flex;
-            align-items: center;
-        }
-    
-        
+
+    .card {
+        width: 100%;
+        height: 240px;
+        border-radius: 2px;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        align-items: center;
+    }
+
+
 
     .IMG {
         margin: 30px;
@@ -477,7 +491,7 @@ p {
     .play {
         height: 34px;
         width: 75px;
-        
+
 
     }
 
@@ -487,23 +501,25 @@ p {
 
     .follow {
         height: 34px;
-        width:75px;
-        
+        width: 75px;
+
     }
-    nav{
-        display: none;
-    }
-    .i-con{
+
+    nav {
         display: none;
     }
 
-    .fav{
+    .i-con {
+        display: none;
+    }
+
+    .fav {
         margin-left: 2%;
         width: 60%;
     }
 
-    
 
-    
+
+
 
 }
